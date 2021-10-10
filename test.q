@@ -12,7 +12,7 @@ export MKL_NUM_THREADS=1
 export NUMEXPR_NUM_THREADS=1
 export OMP_NUM_THREADS=1
 
-module load impi/.2018.1.163-eb
+module load openmpi/.4.0.5-gcc-2020b-eb
 module load Anaconda/2020.07-nsc1
 conda activate /proj/tfya99/software/condaenv
 
