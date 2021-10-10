@@ -16,6 +16,6 @@ module load openmpi/.4.0.5-gcc-2020b-eb
 module load Anaconda/2020.07-nsc1
 conda activate /proj/tfya99/software/condaenv
 
-time mpirun python3 test_mpi.py
+mpirun echo "Hello world!"
 
 echo "job completed"
