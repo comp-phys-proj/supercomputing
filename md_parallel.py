@@ -6,6 +6,10 @@ from asap3.md.verlet import VelocityVerlet
 from ase.parallel import parprint, world
 from ase import units
 import time, os, numpy
+from warnings import simplefilter
+
+# Supress some warnings that get very frequent in parallel output
+simplefilter(action='ignore', category=FutureWarning)
 
 #cpulayout = (2, 2, 2)    # 8 cores in 2*2*2 grid
 cpulayout = "auto"       # Just figure it out...
