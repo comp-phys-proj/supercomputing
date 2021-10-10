@@ -7,14 +7,6 @@ from ase.parallel import parprint, world
 from ase import units
 import time, os, numpy
 
-# Remove a numpy warning message that otherwise gets repeated a lot
-numpy.warnings.filterwarnings("ignore", category=numpy.VisibleDeprecationWarning)
-
-os.environ["OPENBLAS_NUM_THREADS"] = "1"
-os.environ["MKL_NUM_THREADS"] = "1"
-os.environ["NUMEXPR_NUM_THREADS"] = "1"
-os.environ["OMP_NUM_THREADS"] = "1"
-
 #cpulayout = (2, 2, 2)    # 8 cores in 2*2*2 grid
 cpulayout = "auto"       # Just figure it out...
 
