@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from asap3 import print_version
 from asap3 import LennardJones
 from asap3.io import Trajectory
