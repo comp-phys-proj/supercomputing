@@ -2,6 +2,7 @@
 #
 #SBATCH -J testjob
 #SBATCH -A <project>
+#SBATCH --reservation devel
 #SBATCH -t 00:05:00
 #SBATCH -N 1
 #SBATCH -n 32
