@@ -4,6 +4,7 @@
 #SBATCH -A <project>
 #SBATCH -t 00:05:00
 #SBATCH -N 1
+#SBATCH -n 32
 #SBATCH --exclusive
 #
 export NSC_MODULE_SILENT=1
