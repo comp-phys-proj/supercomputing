@@ -13,9 +13,6 @@ export MKL_NUM_THREADS=1
 export NUMEXPR_NUM_THREADS=1
 export OMP_NUM_THREADS=1
 
-module load Anaconda/2021.05-nsc1
-conda activate /proj/tfya99/software/condaenv
-
 mpprun echo "Hello world!"
 
 echo "job completed"
